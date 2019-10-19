@@ -1,6 +1,8 @@
-# nano-preact-app-template
+# preact-shader-player
 
-This repo contains a boilerplate project built with Preact.
+This repo contains a very simple shader player built with Preact.
+
+Used nano-create-app to create the project. [https://github.com/abhisheksoni27/nano-preact-app]
 
 All the source files are in `src`.
 
