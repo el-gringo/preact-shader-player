@@ -1,0 +1,48 @@
+{
+  "name": "preact-shader-player",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": "git@github.com:abhisheksoni27/nano-preact-app-template.git",
+  "author": "Abhishek Soni <abhisheksoni2720@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "preact": "10"
+  },
+  "scripts": {
+    "start": "parcel serve index.html",
+    "build": "parcel build --detailed-report 10 index.html"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "pragma": "h"
+        }
+      ]
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-react-jsx": "^7.3.0",
+    "@babel/preset-env": "^7.6.3",
+    "glslify-bundle": "^5.1.1",
+    "glslify-deps": "^1.3.1",
+    "parcel": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.2.1"
+  },
+  "alias": {
+    "react": "preact-compat",
+    "react-dom": "preact-compat"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  }
+}
